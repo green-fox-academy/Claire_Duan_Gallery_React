@@ -5,7 +5,7 @@ function LeftArrow(props) {
   const { callback } = props;
   return (
     <div className="show arrow left" onClick={callback} role="presentation">
-      <img src="../images/arrow.png" alt="left arrow" />
+      <img src="./images/arrow.png" alt="left arrow" />
     </div>
   );
 }
