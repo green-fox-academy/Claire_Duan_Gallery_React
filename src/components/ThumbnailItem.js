@@ -6,7 +6,7 @@ function ThumbnailItem(props) {
   const { index } = props;
   return (
     <div className="items">
-      <div className="triangle" />
+      <div className="triangle hide" />
       <div className="thumbnail">
         <ThumbnailImage index={index} />
       </div>

@@ -7,16 +7,12 @@ const mapStateToProps = (state, ownProps) => {
   const { index } = ownProps;
   return {
     url: images[index].url,
-    index,
   };
 };
 
 const mapDispatchToProps = dispatch => ({
   callback: function callback(e) {
-    console.log(e);
-    console.log(e.target);
-    console.log(e.target.index);
-    dispatch(select(e.target.index));
+    dispatch(select(parseInt(e.target.getAttribute('index'), 10)));
   },
 });
 
