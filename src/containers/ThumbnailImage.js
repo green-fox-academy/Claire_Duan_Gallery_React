@@ -12,6 +12,7 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = dispatch => ({
   callback: function callback(e) {
+    // e.target.parentNode.parentNode.firstChild.classList.remove('hide');
     dispatch(select(parseInt(e.target.getAttribute('index'), 10)));
   },
 });
